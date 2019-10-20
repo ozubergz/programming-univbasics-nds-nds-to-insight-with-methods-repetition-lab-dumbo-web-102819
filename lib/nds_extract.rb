@@ -26,6 +26,12 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  result = []
+  source.each do |k, v|
+    result.push(k)
+  end
+
+  result
 end
 
 def total_gross(source)
