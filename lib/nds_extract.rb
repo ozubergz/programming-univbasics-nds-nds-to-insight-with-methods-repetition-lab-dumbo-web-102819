@@ -28,7 +28,7 @@ def list_of_directors(source)
   # Write this implementation
   result = []
   source.each do |k, v|
-    result.push(k)
+    result.push(k[:name])
   end
 
   result
@@ -45,15 +45,15 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   
-  hash_totals = directors_totals(source)
-  directors = list_of_directors(hash_totals)
+  # hash_totals = directors_totals(source)
+  # directors = list_of_directors(hash_totals)
 
-  ult_total = 0
-  directors.each do |director|
-    ult_total += hash_totals[director]
-  end
+  # ult_total = 0
+  # directors.each do |director|
+  #   ult_total += hash_totals[director]
+  # end
 
-  ult_total
+  # ult_total
 end
 
 
